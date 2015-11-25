@@ -16,14 +16,16 @@
 ;; Initalize package system
 (package-initialize)
 
-;; List of emacs packages we want to be installed
+;; List of emacs packages to be installed
 ;; Required system packages:
 ;; - magit: git
 ;; - elpy: rope jedi flake8 importmagic autopep8 yapf
+;; - auctex: texlive ghostcript
 (defvar required-packages
   '(
     magit ; Interface to Git source code management for emacs.
     elpy ; Python editing and IDE features for emacs.
+    auctex ; LaTeX support for emacs. 
     zenburn-theme ; Worlds best low contrast color theme.
   ) "List of required emacs packages." )
 
