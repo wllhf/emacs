@@ -20,7 +20,7 @@
 ;; Required system packages:
 ;; - magit: git
 ;; - elpy: rope jedi flake8 importmagic autopep8 yapf
-;; - auctex: texlive ghostcript
+;; - auctex: texlive ghostcript dvips gv
 (defvar required-packages
   '(
     magit ; Interface to Git source code management for emacs.
