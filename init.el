@@ -2,6 +2,7 @@
 (require 'general-settings)
 (require 'package-management)
 (require 'magit-settings)
+(require 'latex-settings)
 
 ;; require and enable packages
 (elpy-enable)

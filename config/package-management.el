@@ -25,7 +25,8 @@
   '(
     magit ; Interface to Git source code management for emacs.
     elpy ; Python editing and IDE features for emacs.
-    auctex ; LaTeX support for emacs. 
+    auctex ; LaTeX support for emacs.
+    zotelo ; Sync LaTeX and Zotero.
     zenburn-theme ; Worlds best low contrast color theme.
   ) "List of required emacs packages." )
 
