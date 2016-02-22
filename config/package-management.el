@@ -23,6 +23,10 @@
 ;; - auctex: texlive ghostcript dvips gv
 (defvar required-packages
   '(
+    ido-ubiquitous ; This package replaces stock emacs completion with ido completion wherever it is possible.
+    flx-ido ; Better pattern matching for ido.
+    ido-vertical-mode ; Makes ido-mode display vertically.
+    ; helm ; Helm is incremental completion and selection narrowing framework for Emacs.
     magit ; Interface to Git source code management for emacs.
     elpy ; Python editing and IDE features for emacs.
     auctex ; LaTeX support for emacs.
