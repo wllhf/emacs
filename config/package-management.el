@@ -20,7 +20,7 @@
 ;; Required system packages:
 ;; - magit: git
 ;; - elpy: pip packages: rope jedi flake8 importmagic autopep8 yapf
-;; - auctex: texlive ghostcript dvips gv
+;; - auctex: texlive ghostscript gv
 (defvar required-packages
   '(
     ido-ubiquitous ; This package replaces stock emacs completion with ido completion wherever it is possible.
