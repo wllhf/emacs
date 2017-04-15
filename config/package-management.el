@@ -21,6 +21,7 @@
 ;; - magit: git
 ;; - elpy: pip packages: rope jedi flake8 importmagic autopep8 yapf
 ;; - auctex: texlive ghostscript gv
+;; - font: fonts-inconsolata
 (defvar required-packages
   '(
     ido-ubiquitous ; This package replaces stock emacs completion with ido completion wherever it is possible.
