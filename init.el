@@ -4,6 +4,7 @@
 (require 'package-management)
 (require 'general-settings)
 ;; packages
+(require 'ace-window-settings)
 (require 'ido-settings)
 (require 'magit-settings)
 (require 'org-settings)

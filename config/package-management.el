@@ -22,16 +22,23 @@
 ;; - elpy: pip packages: rope jedi flake8 importmagic autopep8 yapf
 ;; - auctex: texlive ghostscript gv
 ;; - font: fonts-inconsolata
+;; - company: clang
 (defvar required-packages
   '(
+    ace-window ; Quickly switch windows in emacs.
     ido-ubiquitous ; This package replaces stock emacs completion with ido completion wherever it is possible.
     flx-ido ; Better pattern matching for ido.
     ido-vertical-mode ; Makes ido-mode display vertically.
     smex ; Allows ido to do M-X stuff (see ido-settings.el)
     ; helm ; Helm is incremental completion and selection narrowing framework for Emacs.
+    company ; Text completion framework for emacs.
     magit ; Interface to Git source code management for emacs.
     elpy ; Python editing and IDE features for emacs.
+    irony ; A C/C++ minor mode for emacs powered by libclang.
+    company-irony
     auctex ; LaTeX support for emacs.
+    company-bibtex
+    company-auctex
     zotelo ; Sync LaTeX and Zotero.
     zenburn-theme ; Worlds best low contrast color theme.
   ) "List of required emacs packages." )
