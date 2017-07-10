@@ -8,6 +8,7 @@
 (require 'ido-settings)
 (require 'magit-settings)
 (require 'org-settings)
+(require 'company-settings)
 ;; languages
 (require 'latex-settings)
 (require 'python-settings)

@@ -22,6 +22,8 @@
 ;; - elpy: pip packages: rope jedi flake8 importmagic autopep8 yapf
 ;; - auctex: texlive ghostscript gv
 ;; - font: fonts-inconsolata
+;; - irony: cmake libclang
+;; call M-x irony-install-server after installation
 ;; - company: clang
 (defvar required-packages
   '(
@@ -36,6 +38,7 @@
     elpy ; Python editing and IDE features for emacs.
     irony ; A C/C++ minor mode for emacs powered by libclang.
     company-irony
+    company-irony-c-headers
     auctex ; LaTeX support for emacs.
     company-bibtex
     company-auctex
