@@ -9,8 +9,6 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
              '("elpy" . "https://jorgenschaefer.github.io/packages/"))
 
 ;; Initalize package system
@@ -27,23 +25,23 @@
 ;; - company: clang
 (defvar required-packages
   '(
+    zenburn-theme ; Worlds best low contrast color theme.
     ace-window ; Quickly switch windows in emacs.
-    ido-ubiquitous ; This package replaces stock emacs completion with ido completion wherever it is possible.
-    flx-ido ; Better pattern matching for ido.
-    ido-vertical-mode ; Makes ido-mode display vertically.
-    smex ; Allows ido to do M-X stuff (see ido-settings.el)
-    ; helm ; Helm is incremental completion and selection narrowing framework for Emacs.
-    company ; Text completion framework for emacs.
+    ivy ; This package replaces emacs completion/narrowing.
+
     magit ; Interface to Git source code management for emacs.
-    elpy ; Python editing and IDE features for emacs.
-    irony ; A C/C++ minor mode for emacs powered by libclang.
-    company-irony
-    company-irony-c-headers
     auctex ; LaTeX support for emacs.
+    elpy ; Python editing and IDE features for emacs.
+
+    ;zotelo ; Sync LaTeX and Zotero.
+
+    company ; Text completion framework for emacs.
     company-bibtex
     company-auctex
-    zotelo ; Sync LaTeX and Zotero.
-    zenburn-theme ; Worlds best low contrast color theme.
+    company-irony
+    company-irony-c-headers
+    irony ; A C/C++ minor mode for emacs powered by libclang.
+    
   ) "List of required emacs packages." )
 
 ;; function to check if all required packages (the ones in required-packages variable) are installed
