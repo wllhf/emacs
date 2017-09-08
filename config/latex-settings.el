@@ -16,6 +16,6 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex) ; Helps with references and labels.
 (setq reftex-plug-into-AUCTeX t)
 
-(add-hook 'TeX-mode-hook 'zotelo-minor-mode) ; Sync with Zotero.
+;(add-hook 'TeX-mode-hook 'zotelo-minor-mode) ; Sync with Zotero.
 
 (provide 'latex-settings)
