@@ -12,7 +12,7 @@
 
 ;; Turn on mouse wheel support for scrolling
 (require 'mwheel)
-(mouse-wheel-mode 1)
+(mouse-wheel-mode t)
 
 ;; Do not ding!
 (setq visible-bell t)
@@ -22,8 +22,8 @@
 (setq inhibit-splash-screen t)
 
 ;; Show the current line and column number
-(line-number-mode 1)
-(column-number-mode 1)
+(line-number-mode t)
+(column-number-mode t)
 
 ;; Use X clipboard instead of primary
 (setq x-select-enable-clipboard t
@@ -43,8 +43,8 @@
 (setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
 
 ;; line truncation
-(setq-default truncate-lines 1)
-(setq truncate-partial-width-windows 1)
+(setq-default truncate-lines t)
+(setq truncate-partial-width-windows t)
 
 ;; Always use spaces, not tabs, when indenting
 (setq-default indent-tabs-mode nil)
@@ -54,16 +54,16 @@
 
 ;; highlight parentheses when the cursor is next to them
 (require 'paren)
-(show-paren-mode 1)
+(show-paren-mode t)
 
 ;; Replace some default keybindings with more powerfull equivalents
-(global-set-key (kbd "M-/") 'hippie-expand)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-(global-set-key (kbd "M-z") 'zap-up-to-char)
+;; (global-set-key (kbd "M-/") 'hippie-expand)
+;; (global-set-key (kbd "C-x C-b") 'ibuffer)
+;; (global-set-key (kbd "M-z") 'zap-up-to-char)
 
-(global-set-key (kbd "C-s") 'isearch-forward-regexp)
-(global-set-key (kbd "C-r") 'isearch-backward-regexp)
-(global-set-key (kbd "C-M-s") 'isearch-forward)
-(global-set-key (kbd "C-M-r") 'isearch-backward)
+;; (global-set-key (kbd "C-s") 'isearch-forward-regexp)
+;; (global-set-key (kbd "C-r") 'isearch-backward-regexp)
+;; (global-set-key (kbd "C-M-s") 'isearch-forward)
+;; (global-set-key (kbd "C-M-r") 'isearch-backward)
 
 (provide 'general-settings)
