@@ -1,9 +1,8 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
-(eval-after-load 'company
-   '(add-to-list 'company-backends 'company-irony))
-
+;; (eval-after-load 'company
+;;    '(add-to-list 'company-backends 'company-irony))
 
 ;; (require 'company-irony-c-headers)
 ;; ;; Load with `irony-mode` as a grouped backend
