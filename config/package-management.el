@@ -28,6 +28,8 @@
     zenburn-theme ; Worlds best low contrast color theme.
     ace-window ; Quickly switch windows in emacs.
     ivy ; This package replaces emacs completion/narrowing.
+    counsel ; Various completion functions using Ivy
+    swiper ; Isearch with an overview. Oh, man!
 
     magit ; Interface to Git source code management for emacs.
     auctex ; LaTeX support for emacs.
