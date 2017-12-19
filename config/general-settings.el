@@ -52,6 +52,9 @@
 ;; Alaways end file with newline
 (setq require-final-newline t)
 
+;; Allways delete trailing whitespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; highlight parentheses when the cursor is next to them
 (require 'paren)
 (show-paren-mode t)
