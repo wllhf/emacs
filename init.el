@@ -31,3 +31,6 @@
 ;; (set-frame-font "Source Code Pro 10")
 ;; (set-frame-font "Bitstream Vera Sans Mono 11")
 
+;; save customizations in different file
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
