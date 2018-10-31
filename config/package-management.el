@@ -20,7 +20,7 @@
 ;; - elpy: pip packages: rope jedi flake8 importmagic autopep8 yapf
 ;; - auctex: texlive ghostscript gv
 ;; - font: fonts-inconsolata
-;; - irony: cmake libclang
+;; - irony: cmake libclang-XX-dev
 ;; call M-x irony-install-server after installation
 ;; - company: clang
 (defvar required-packages
@@ -43,7 +43,7 @@
     company-irony
     company-irony-c-headers
     irony ; A C/C++ minor mode for emacs powered by libclang.
-    
+
   ) "List of required emacs packages." )
 
 ;; function to check if all required packages (the ones in required-packages variable) are installed
